@@ -17,9 +17,9 @@ const Home = () => {
     <>
       <HeroSection />
       {/* Skills Section */}
-      <section className="mx-auto my-20 px-5 max-w-4xl">
-        <div className="flex flex-col items-center gap-y-12">
-          <h2 className="uppercase text-sm tracking-[0.3em] font-semibold text-gray-900 dark:text-white/50">
+      <section className="mx-auto mt-10 mb-20 p-5 max-w-4xl">
+        <div className="flex flex-col items-center gap-y-8 border rounded-xl p-5">
+          <h2 className="uppercase text-sm tracking-[0.3em] font-semibold text-gray-900 dark:text-white/50 underline underline-offset-4">
             Technical Stack
           </h2>
 
@@ -29,7 +29,7 @@ const Home = () => {
               <h3 className="text-orange-400 font-mono text-sm uppercase">
                 Development
               </h3>
-              <div className="flex flex-wrap justify-center md:justify-start gap-6 text-gray-900 dark:text-white/80">
+              <div className="flex flex-wrap justify-center md:justify-start gap-x-2 sm:gap-x-6 text-gray-900 dark:text-white/80">
                 <FaHtml5 size={40} className={iconClasses} title="HTML5" />
                 <FaCss3Alt size={40} className={iconClasses} title="CSS3" />
                 <RiJavascriptFill

@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 
 const HeroSection = () => {
   return (
-    <div className="container mx-auto px-5 flex flex-col items-center pt-10 pb-20 gap-y-6">
+    <div className="container mx-auto px-5 flex flex-col items-center pt-10 pb-14 gap-y-6">
       {/* 🟢 Available for Hire Badge */}
       <div className="flex items-center gap-x-2 bg-green-500/10 border border-green-500/30 px-4 py-1.5 rounded-full text-green-400 text-xs font-medium mb-4">
         <span className="relative flex h-2 w-2">
