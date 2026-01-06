@@ -13,18 +13,14 @@ const Navbar = () => {
       }
     };
 
-    if (menuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
+    document.body.style.overflow = menuOpen ? 'hidden' : 'unset';
 
     if (menuOpen) {
-      document.addEventListener('pointerdown', handleClickOutside);
+      document.addEventListener('mousedown', handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('pointerdown', handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [menuOpen]);
 
