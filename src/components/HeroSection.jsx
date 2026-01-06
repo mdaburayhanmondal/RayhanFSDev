@@ -45,7 +45,7 @@ const HeroSection = () => {
       <div className="flex flex-col sm:flex-row gap-4 mt-2">
         <Link
           to="/contact"
-          className="bg-white text-[#161513] px-8 py-3 rounded-full font-bold hover:bg-transparent hover:text-white border border-white transition-all shadow-lg"
+          className="bg-white text-[#161513] text-center px-8 py-3 rounded-full font-bold hover:bg-transparent hover:text-white border border-white transition-all shadow-lg"
         >
           Let's Talk
         </Link>
