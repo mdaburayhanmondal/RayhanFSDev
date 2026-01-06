@@ -30,8 +30,10 @@ const HeroSection = () => {
           </span>
         </h1>
         <p className="text-sm md:text-lg text-gray-400 text-center max-w-xl leading-relaxed">
-          A wannabe Full-Stack Developer transitioning from Digital Marketing to
-          building high-performance web applications with React and Node.js.
+          Aspiring Full-Stack Developer dedicated to engineering
+          high-performance, scalable web applications. Currently mastering the
+          MERN stack and Next.js to bridge the gap between complex backend logic
+          and seamless user experiences.
         </p>
       </div>
 
