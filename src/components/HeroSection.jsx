@@ -44,8 +44,8 @@ const HeroSection = () => {
         </Link>
 
         <a
-          href="public/Md_Abu_Rayhan_Mondal_CV.pdf"
-          download="public/Md_Abu_Rayhan_Mondal_CV.pdf"
+          href="/Md_Abu_Rayhan_Mondal_CV.pdf"
+          download="Md_Abu_Rayhan_Mondal_CV.pdf"
           className="bg-transparent border border-white/20 text-white font-semibold px-8 py-3 rounded-full hover:bg-white/5 transition-all text-center"
         >
           Download CV
