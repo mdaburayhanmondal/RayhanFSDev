@@ -65,7 +65,7 @@ const Contact = () => {
               <div className="bg-white/5 p-3 rounded-lg border border-white/10 group-hover:border-orange-500 transition-colors">
                 <MdEmail size={20} className="text-orange-500" />
               </div>
-              <span className="font-medium text-sm group-hover:text-white blur hover:blur-none transition-all duration-200 ease-in">
+              <span className="font-medium text-sm group-hover:text-white blur active:blur-none hover:blur-none transition-all duration-200 ease-in">
                 {emailAddress}
               </span>
 
