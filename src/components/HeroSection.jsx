@@ -29,7 +29,7 @@ const HeroSection = () => {
             Rayhan
           </span>
         </h1>
-        <p className="text-white/70 max-w-lg leading-relaxed text-lg">
+        <p className="text-white/70 max-w-xl text-center leading-relaxed text-sm sm:text-md md:text-lg">
           Building the next generation of the web with
           <span className="text-white font-semibold">
             {' '}
