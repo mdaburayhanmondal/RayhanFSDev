@@ -46,7 +46,7 @@ const Contact = () => {
         {/* Left Side: Text & Socials */}
         <div className="flex flex-col gap-y-8">
           <div>
-            <h1 className="text-4xl md:text-5xl font-extrabold bg-linear-to-b from-[#FF8660] to-[#D5491D] bg-clip-text text-transparent uppercase tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-extrabold bg-linear-to-b from-[#FF8660] to-[#D5491D] bg-clip-text text-transparent uppercase tracking-tight underline underline-offset-8 decoration-wavy decoration-[#FF8660]">
               Let's Connect
             </h1>
             <p className="text-gray-900 dark:text-white/60 mt-4 max-w-md leading-relaxed">
@@ -90,7 +90,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-y-4 pt-4">
+          <div className="flex flex-col justify-center gap-y-4 p-2 border rounded-xl w-fit shadow shadow-orange-300">
             <span className="text-xs uppercase tracking-widest text-gray-900 dark:text-white/30 font-bold">
               Follow my journey
             </span>
