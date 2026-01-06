@@ -64,7 +64,7 @@ const Privacy = () => {
               {/* Added this wrapper */}
               <span
                 onClick={handleCopy}
-                className="text-orange-500 cursor-pointer font-medium hover:text-orange-400 transition-colors"
+                className="text-orange-500 cursor-pointer font-medium hover:text-orange-400 blur hover:blur-none transition-all duration-200 ease-in"
                 title="Click to copy email"
               >
                 {email}
