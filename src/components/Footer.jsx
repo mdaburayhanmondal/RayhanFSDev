@@ -80,7 +80,9 @@ const Footer = () => {
 
         {/* Bottom Copyright */}
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-y-4 text-white/30 text-[10px] uppercase tracking-widest">
-          <p>© {currentYear} Md. Abu Rayhan Mondal. All rights reserved.</p>
+          <p className="text-center">
+            © {currentYear} Md. Abu Rayhan Mondal. All rights reserved.
+          </p>
           <div className="flex gap-x-6">
             <Link to="/privacy" className="hover:text-white transition-colors">
               Privacy Policy
