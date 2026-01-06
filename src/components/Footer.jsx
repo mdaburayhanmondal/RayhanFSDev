@@ -12,7 +12,7 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <FaLinkedinIn />,
-      href: 'https://www.linkedin.com/in/md-abu-rayhan-mondal-820264379/',
+      href: 'https://www.linkedin.com/in/md-abu-rayhan-mondal/',
       color: 'hover:text-blue-500',
     },
     {
