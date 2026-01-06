@@ -109,7 +109,7 @@ const Contact = () => {
 
         {/* Right Side: Glassmorphism Form */}
         <form
-          action={import.meta.env.END_POINT}
+          action={import.meta.env.VITE_END_POINT}
           method="POST"
           className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl flex flex-col gap-y-6 shadow-2xl"
         >
