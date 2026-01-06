@@ -4,8 +4,8 @@ import { memo } from 'react';
 const SkillCard = memo(
   ({ projectTitle, imageSrc, imageAlt, firstPill, secondPill, liveLink }) => {
     return (
-      <div className="order-2 md:order-1 w-full group transition-all duration-300">
-        <div className="relative overflow-hidden rounded-t-xl border-x border-t border-white/10">
+      <div className="w-full group transition-all duration-300">
+        <div className="relative overflow-hidden rounded-t-xl border-x border-t border-black/10 dark:border-white/10">
           <img
             src={imageSrc}
             loading="lazy"
@@ -15,11 +15,11 @@ const SkillCard = memo(
           {/* Tech Pills */}
           <div className="absolute bottom-3 left-3 flex gap-2">
             {firstPill && (
-              <span className="bg-[#161513]/80 backdrop-blur-md text-[10px] px-2 py-1 rounded border border-white/10 text-white/90">
+              <span className="bg-[#161513]/80 backdrop-blur-md text-[10px] px-2 py-1 rounded border border-black/10 dark:border-white/10 text-gray-900 dark:text-white/90">
                 {firstPill}
               </span>
             )}
-            <span className="bg-[#161513]/80 backdrop-blur-md text-[10px] px-2 py-1 rounded border border-white/10 text-white/90">
+            <span className="bg-[#161513]/80 backdrop-blur-md text-[10px] px-2 py-1 rounded border border-black/10 dark:border-white/10 text-gray-900 dark:text-white/90">
               {secondPill}
             </span>
           </div>
@@ -28,7 +28,7 @@ const SkillCard = memo(
           href={liveLink}
           target="blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-between bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 rounded-b-xl px-5 py-4 transition-all"
+          className="flex items-center justify-between bg-black/5 dark:bg-white/5 backdrop-blur-sm border border-black/10 dark:border-white/10 hover:bg-white/10 rounded-b-xl px-5 py-4 transition-all"
         >
           <h3 className="text-md md:text-lg font-semibold tracking-wide">
             {projectTitle}

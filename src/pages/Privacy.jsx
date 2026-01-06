@@ -12,7 +12,7 @@ const Privacy = () => {
   };
 
   return (
-    <div className="container mx-auto px-5 py-20 max-w-4xl leading-relaxed text-white/80">
+    <div className="container mx-auto px-5 pt-20 max-w-4xl leading-relaxed text-gray-900 dark:text-white/80">
       <h1 className="text-3xl font-bold mb-8 uppercase tracking-widest bg-linear-to-b from-[#FF8660] to-[#D5491D] bg-clip-text text-transparent">
         Privacy Policy
       </h1>
@@ -21,7 +21,7 @@ const Privacy = () => {
         <p>Last Updated: January 2026</p>
 
         <div>
-          <h2 className="text-xl font-semibold text-white mb-2">
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
             1. Information I Collect
           </h2>
           <p>
@@ -32,7 +32,7 @@ const Privacy = () => {
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold text-white mb-2">
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
             2. Third-Party Services
           </h2>
           <p>
@@ -44,7 +44,9 @@ const Privacy = () => {
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold text-white mb-2">3. Cookies</h2>
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+            3. Cookies
+          </h2>
           <p>
             This portfolio is designed to be privacy-friendly and does not use
             tracking cookies or analytics software that identifies individual
@@ -53,7 +55,7 @@ const Privacy = () => {
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold text-white mb-2">
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
             4. Contact Me
           </h2>
           <p>

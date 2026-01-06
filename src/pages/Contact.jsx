@@ -26,7 +26,7 @@ const Contact = () => {
     {
       icon: <FaGithub />,
       href: 'https://github.com/mdaburayhanmondal',
-      color: 'hover:text-white',
+      color: 'hover:text-gray-900 dark:text-white',
     },
     {
       icon: <FaFacebookF />,
@@ -41,7 +41,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="container mx-auto px-5 py-20 max-w-6xl">
+    <div className="container mx-auto px-5 pt-20 max-w-6xl">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         {/* Left Side: Text & Socials */}
         <div className="flex flex-col gap-y-8">
@@ -49,7 +49,7 @@ const Contact = () => {
             <h1 className="text-4xl md:text-5xl font-extrabold bg-linear-to-b from-[#FF8660] to-[#D5491D] bg-clip-text text-transparent uppercase tracking-tight">
               Let's Connect
             </h1>
-            <p className="text-white/60 mt-4 max-w-md leading-relaxed">
+            <p className="text-gray-900 dark:text-white/60 mt-4 max-w-md leading-relaxed">
               Whether you have a question, a project idea, or just want to say
               hi, my inbox is always open. I'll get back to you as soon as
               possible!
@@ -60,12 +60,15 @@ const Contact = () => {
             {/* Email Copy Section */}
             <div
               onClick={handleCopy}
-              className="relative flex items-center gap-x-4 text-white/80 group cursor-pointer w-fit"
+              className="relative flex items-center gap-x-4 text-gray-900 dark:text-white/80 group cursor-pointer w-fit"
             >
-              <div className="bg-white/5 p-3 rounded-lg border border-white/10 group-hover:border-orange-500 transition-colors">
+              <div className="bg-black/5 dark:bg-white/5 p-3 rounded-lg border border-black/10 dark:border-white/10 group-hover:border-orange-500 transition-colors">
                 <MdEmail size={20} className="text-orange-500" />
               </div>
-              <span className="font-medium text-sm group-hover:text-white blur active:blur-none hover:blur-none transition-all duration-200 ease-in">
+              <span
+                className="font-medium text-sm text-gray-500 dark:text-white/80 group-hover:text-gray-900 dark:group-hover:text-white blur active:blur-none hover:blur-none transition-all duration-200 ease-in
+"
+              >
                 {emailAddress}
               </span>
 
@@ -77,8 +80,8 @@ const Contact = () => {
               )}
             </div>
 
-            <div className="flex items-center gap-x-4 text-white/80 group">
-              <div className="bg-white/5 p-3 rounded-lg border border-white/10 group-hover:border-orange-500 transition-colors">
+            <div className="flex items-center gap-x-4 text-gray-900 dark:text-white/80 group">
+              <div className="bg-black/5 dark:bg-white/5 p-3 rounded-lg border border-black/10 dark:border-white/10 group-hover:border-orange-500 transition-colors">
                 <MdLocationOn size={20} className="text-orange-500" />
               </div>
               <span className="font-medium text-sm">
@@ -88,7 +91,7 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col gap-y-4 pt-4">
-            <span className="text-xs uppercase tracking-widest text-white/30 font-bold">
+            <span className="text-xs uppercase tracking-widest text-gray-900 dark:text-white/30 font-bold">
               Follow my journey
             </span>
             <div className="flex gap-x-5">
@@ -98,7 +101,7 @@ const Contact = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`text-2xl text-white/50 transition-all duration-300 hover:-translate-y-1 ${social.color}`}
+                  className={`text-2xl text-gray-900 dark:text-white/50 transition-all duration-300 hover:-translate-y-1 ${social.color}`}
                 >
                   {social.icon}
                 </a>
@@ -111,10 +114,10 @@ const Contact = () => {
         <form
           action={import.meta.env.VITE_END_POINT}
           method="POST"
-          className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl flex flex-col gap-y-6 shadow-2xl"
+          className="bg-black/5 dark:bg-white/5 backdrop-blur-xl border border-black/10 dark:border-white/10 p-8 rounded-3xl flex flex-col gap-y-6 shadow-2xl"
         >
           <div className="flex flex-col gap-y-2">
-            <label className="text-sm font-medium text-white/70 ml-1">
+            <label className="text-sm font-medium text-gray-900 dark:text-white/70 ml-1">
               Full Name
             </label>
             <input
@@ -122,12 +125,12 @@ const Contact = () => {
               name="name"
               required
               placeholder="Your Name"
-              className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-orange-500 transition-all text-white"
+              className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-xl px-4 py-3 outline-none focus:border-orange-500 transition-all text-gray-900 dark:text-white"
             />
           </div>
 
           <div className="flex flex-col gap-y-2">
-            <label className="text-sm font-medium text-white/70 ml-1">
+            <label className="text-sm font-medium text-gray-900 dark:text-white/70 ml-1">
               Email Address
             </label>
             <input
@@ -135,12 +138,12 @@ const Contact = () => {
               name="email"
               required
               placeholder="example@gmail.com"
-              className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-orange-500 transition-all text-white"
+              className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-xl px-4 py-3 outline-none focus:border-orange-500 transition-all text-gray-900 dark:text-white"
             />
           </div>
 
           <div className="flex flex-col gap-y-2">
-            <label className="text-sm font-medium text-white/70 ml-1">
+            <label className="text-sm font-medium text-gray-900 dark:text-white/70 ml-1">
               Message
             </label>
             <textarea
@@ -148,13 +151,19 @@ const Contact = () => {
               required
               rows="4"
               placeholder="How can I help you?"
-              className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-orange-500 transition-all text-white resize-none"
+              className="
+    bg-black/5 dark:bg-white/5 
+    border border-black/10 dark:border-white/10 
+    rounded-xl px-4 py-3 
+    outline-none focus:border-orange-500 
+    transition-all resize-none text-gray-900 dark:text-white placeholder:text-gray-500 dark:placeholder:text-white/40
+  "
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="bg-white text-[#161513] font-bold py-4 rounded-xl hover:bg-transparent hover:text-white border border-white transition-all duration-300 mt-2 cursor-pointer"
+            className="bg-white text-[#161513] dark:hover:text-white font-bold py-4 rounded-xl hover:bg-transparent hover:text-gray-900 border border-white transition-all duration-300 mt-2 cursor-pointer"
           >
             Send Message
           </button>

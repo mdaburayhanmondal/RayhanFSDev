@@ -60,7 +60,7 @@ const Projects = () => {
         Projects
       </h1>
       {/* Project Cards */}
-      <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 items-center justify-center">
+      <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-4 md:gap-6 md:grid-cols-3 items-center justify-center">
         {projectCards.map((card) => (
           <SkillCard
             key={card.id}

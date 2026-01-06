@@ -8,13 +8,18 @@ import { MdArrowOutward } from 'react-icons/md';
 import { Link } from 'react-router';
 
 const Home = () => {
+  const iconClasses =
+    'dark:text-white transition-all duration-300 hover:text-[#FF8660] hover:drop-shadow-[0_0_10px_#FF8660]';
+  const prevSkillClasses =
+    'border border-black/10 dark:border-white/10 px-3 py-1 rounded hover:border-[#FF8660] transition-all duration-200 ease-in select-none';
+
   return (
     <>
       <HeroSection />
       {/* Skills Section */}
       <section className="mx-auto my-20 px-5 max-w-4xl">
         <div className="flex flex-col items-center gap-y-12">
-          <h2 className="uppercase text-sm tracking-[0.3em] font-semibold text-white/50">
+          <h2 className="uppercase text-sm tracking-[0.3em] font-semibold text-gray-900 dark:text-white/50">
             Technical Stack
           </h2>
 
@@ -24,32 +29,20 @@ const Home = () => {
               <h3 className="text-orange-400 font-mono text-sm uppercase">
                 Development
               </h3>
-              <div className="flex flex-wrap justify-center md:justify-start gap-6 text-white/80">
-                <FaHtml5
-                  size={40}
-                  className="hover:text-white transition-colors"
-                  title="HTML5"
-                />
-                <FaCss3Alt
-                  size={40}
-                  className="hover:text-white transition-colors"
-                  title="CSS3"
-                />
+              <div className="flex flex-wrap justify-center md:justify-start gap-6 text-gray-900 dark:text-white/80">
+                <FaHtml5 size={40} className={iconClasses} title="HTML5" />
+                <FaCss3Alt size={40} className={iconClasses} title="CSS3" />
                 <RiJavascriptFill
                   size={40}
-                  className="hover:text-white transition-colors"
+                  className={iconClasses}
                   title="JavaScript"
                 />
                 <RiTailwindCssFill
                   size={40}
-                  className="hover:text-white transition-colors"
+                  className={iconClasses}
                   title="Tailwind"
                 />
-                <FaReact
-                  size={40}
-                  className="hover:text-white transition-colors"
-                  title="React"
-                />
+                <FaReact size={40} className={iconClasses} title="React" />
               </div>
             </div>
 
@@ -58,16 +51,10 @@ const Home = () => {
               <h3 className="text-purple-400 font-mono text-sm uppercase">
                 Marketing & CMS
               </h3>
-              <div className="flex flex-wrap justify-center md:justify-center gap-6 text-white/50 italic font-medium">
-                <span className="border border-white/10 px-3 py-1 rounded">
-                  WordPress
-                </span>
-                <span className="border border-white/10 px-3 py-1 rounded">
-                  SEO
-                </span>
-                <span className="border border-white/10 px-3 py-1 rounded">
-                  Digital Marketing
-                </span>
+              <div className="flex flex-wrap justify-center md:justify-center gap-6 text-gray-900 dark:text-white/50 italic font-medium">
+                <span className={prevSkillClasses}>WordPress</span>
+                <span className={prevSkillClasses}>SEO</span>
+                <span className={prevSkillClasses}>Digital Marketing</span>
               </div>
             </div>
           </div>
@@ -86,7 +73,9 @@ const Home = () => {
 
             <Link
               to="/projects"
-              className="hidden md:flex bg-transparent text-white px-6 py-2 rounded-full border border-white/20 hover:border-white hover:bg-white hover:text-[#161513] transition-all duration-300 items-center gap-x-2 shadow-xl whitespace-nowrap group"
+              className="
+    hidden md:flex items-center gap-x-2 px-6 py-2 rounded-full border shadow-xl whitespace-nowrap group transition-all duration-300 bg-transparent text-gray-900 border-[#161513] dark:text-white dark:border-white/20 hover:bg-[#161513] hover:text-white hover:border-[#161513] dark:hover:bg-white dark:hover:text-[#161513] dark:hover:border-white
+  "
             >
               <span className="font-medium italic">See All Work</span>
               <MdArrowOutward className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -95,7 +84,7 @@ const Home = () => {
 
           {/* 2. Left Card (Project 1) */}
           <div className="order-2 md:order-1 w-full group transition-all duration-300">
-            <div className="relative overflow-hidden rounded-t-xl border-x border-t border-white/10">
+            <div className="relative overflow-hidden rounded-t-xl border-x border-t border-black/10 dark:border-white/10">
               <img
                 src="CryptoDash.png"
                 loading="lazy"
@@ -104,10 +93,10 @@ const Home = () => {
               />
               {/* Tech Pills */}
               <div className="absolute bottom-3 left-3 flex gap-2">
-                <span className="bg-[#161513]/80 backdrop-blur-md text-[10px] px-2 py-1 rounded border border-white/10 text-white/90">
+                <span className="bg-[#161513]/80 backdrop-blur-md text-[10px] px-2 py-1 rounded border border-black/10 dark:border-white/10 text-gray-900 dark:text-white/90">
                   React
                 </span>
-                <span className="bg-[#161513]/80 backdrop-blur-md text-[10px] px-2 py-1 rounded border border-white/10 text-white/90">
+                <span className="bg-[#161513]/80 backdrop-blur-md text-[10px] px-2 py-1 rounded border border-black/10 dark:border-white/10 text-gray-900 dark:text-white/90">
                   Tailwind
                 </span>
               </div>
@@ -116,7 +105,7 @@ const Home = () => {
               href="https://cryptodashrayhan.netlify.app/"
               target="blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 rounded-b-xl px-5 py-4 transition-all"
+              className="flex items-center justify-between bg-black/5 dark:bg-white/5 backdrop-blur-sm border border-black/10 dark:border-white/10 hover:bg-white/10 rounded-b-xl px-5 py-4 transition-all"
             >
               <h3 className="text-md md:text-lg font-semibold tracking-wide">
                 CryptoDash
@@ -127,7 +116,7 @@ const Home = () => {
 
           {/* 3. Right Card (Project 2) */}
           <div className="order-3 md:order-3 w-full group transition-all duration-300">
-            <div className="relative overflow-hidden rounded-t-xl border-x border-t border-white/10">
+            <div className="relative overflow-hidden rounded-t-xl border-x border-t border-black/10 dark:border-white/10">
               <img
                 src="TeknoMart.png"
                 loading="lazy"
@@ -136,7 +125,7 @@ const Home = () => {
               />
               {/* Tech Pills */}
               <div className="absolute bottom-3 left-3 flex gap-2">
-                <span className="bg-[#161513]/80 backdrop-blur-md text-[10px] px-2 py-1 rounded border border-white/10 text-white/90">
+                <span className="bg-[#161513]/80 backdrop-blur-md text-[10px] px-2 py-1 rounded border border-black/10 dark:border-white/10 text-gray-900 dark:text-white/90">
                   Tailwind
                 </span>
               </div>
@@ -145,7 +134,7 @@ const Home = () => {
               href="https://teknomart.netlify.app/"
               target="blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 rounded-b-xl px-5 py-4 transition-all"
+              className="flex items-center justify-between bg-black/5 dark:bg-white/5 backdrop-blur-sm border border-black/10 dark:border-white/10 hover:bg-white/10 rounded-b-xl px-5 py-4 transition-all"
             >
               <h3 className="text-md md:text-lg font-semibold tracking-wide">
                 TeknoMart
@@ -158,7 +147,7 @@ const Home = () => {
           <div className="order-4 md:hidden flex justify-center w-full pt-4">
             <Link
               to="/projects"
-              className="bg-transparent text-white px-8 py-3 rounded-full border border-white/20 hover:border-white transition-all duration-300 flex items-center gap-x-2"
+              className="bg-transparent text-gray-900 dark:text-white px-8 py-3 rounded-full border border-white/20 hover:border-white transition-all duration-300 flex items-center gap-x-2"
             >
               <span className="font-medium italic">See All Work</span>
               <MdArrowOutward />

@@ -29,9 +29,9 @@ const HeroSection = () => {
             Rayhan
           </span>
         </h1>
-        <p className="text-white/70 max-w-xl text-center leading-relaxed text-sm sm:text-md md:text-lg">
+        <p className="text-gray-900 dark:text-white/70 max-w-xl text-center leading-relaxed text-sm sm:text-md md:text-lg">
           Building the next generation of the web with
-          <span className="text-white font-semibold">
+          <span className="text-gray-900 dark:text-white font-semibold">
             {' '}
             React, Node.js, and Next.js
           </span>
@@ -43,9 +43,20 @@ const HeroSection = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row gap-4 mt-2">
+        {/* PRIMARY BUTTON: Solid -> Outline */}
         <Link
           to="/contact"
-          className="bg-white text-[#161513] text-center px-8 py-3 rounded-full font-bold hover:bg-transparent hover:text-white border border-white transition-all shadow-lg"
+          className="
+      text-center px-8 py-3 rounded-full font-bold transition-all duration-300 shadow-lg active:scale-95 border
+      
+      /* Light Mode: Black Background -> Transparent with Black Text */
+      bg-[#161513] text-white border-[#161513]
+      hover:bg-transparent hover:text-[#161513]
+      
+      /* Dark Mode: White Background -> Transparent with White Text */
+      dark:bg-white dark:text-[#161513] dark:border-white
+      dark:hover:bg-transparent dark:hover:text-white
+    "
         >
           Let's Talk
         </Link>
@@ -53,7 +64,11 @@ const HeroSection = () => {
         <a
           href="/Md_Abu_Rayhan_Mondal_CV.pdf"
           download="Md_Abu_Rayhan_Mondal_CV.pdf"
-          className="bg-transparent border border-white/20 text-white font-semibold px-8 py-3 rounded-full hover:bg-white/5 transition-all text-center"
+          className="
+      text-center px-8 py-3 rounded-full font-semibold transition-all duration-300 active:scale-95 border bg-transparent text-[#161513] border-[#161513]/30
+      hover:bg-[#161513]/5 hover:border-[#161513] dark:text-white dark:border-white/20
+      dark:hover:bg-white/10 dark:hover:border-white
+    "
         >
           Download CV
         </a>
