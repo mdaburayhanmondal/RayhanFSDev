@@ -80,7 +80,7 @@ const Contact = () => {
               )}
             </div>
 
-            <div className="flex items-center gap-x-4 text-gray-900 dark:text-white/80 group">
+            <div className="flex items-center gap-x-4 text-gray-900 dark:text-white/80 group w-fit">
               <div className="bg-black/5 dark:bg-white/5 p-3 rounded-lg border border-black/10 dark:border-white/10 group-hover:border-orange-500 transition-colors">
                 <MdLocationOn size={20} className="text-orange-500" />
               </div>
