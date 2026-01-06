@@ -98,6 +98,7 @@ const Home = () => {
             <div className="relative overflow-hidden rounded-t-xl border-x border-t border-white/10">
               <img
                 src="CryptoDash.png"
+                loading="lazy"
                 alt="CryptoDash"
                 className="w-full object-cover transition-transform duration-500 group-hover:scale-105 brightness-90 group-hover:brightness-100"
               />
@@ -111,12 +112,17 @@ const Home = () => {
                 </span>
               </div>
             </div>
-            <Link className="flex items-center justify-between bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 rounded-b-xl px-5 py-4 transition-all">
+            <a
+              href="https://cryptodashrayhan.netlify.app/"
+              target="blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 rounded-b-xl px-5 py-4 transition-all"
+            >
               <h3 className="text-md md:text-lg font-semibold tracking-wide">
                 CryptoDash
               </h3>
               <MdArrowOutward className="text-orange-500" />
-            </Link>
+            </a>
           </div>
 
           {/* 3. Right Card (Project 2) */}
@@ -124,25 +130,28 @@ const Home = () => {
             <div className="relative overflow-hidden rounded-t-xl border-x border-t border-white/10">
               <img
                 src="TeknoMart.png"
+                loading="lazy"
                 alt="TeknoMart"
                 className="w-full object-cover transition-transform duration-500 group-hover:scale-105 brightness-90 group-hover:brightness-100"
               />
               {/* Tech Pills */}
               <div className="absolute bottom-3 left-3 flex gap-2">
                 <span className="bg-[#161513]/80 backdrop-blur-md text-[10px] px-2 py-1 rounded border border-white/10 text-white/90">
-                  HTML
-                </span>
-                <span className="bg-[#161513]/80 backdrop-blur-md text-[10px] px-2 py-1 rounded border border-white/10 text-white/90">
-                  JavaScript
+                  Tailwind
                 </span>
               </div>
             </div>
-            <Link className="flex items-center justify-between bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 rounded-b-xl px-5 py-4 transition-all">
+            <a
+              href="https://teknomart.netlify.app/"
+              target="blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 rounded-b-xl px-5 py-4 transition-all"
+            >
               <h3 className="text-md md:text-lg font-semibold tracking-wide">
-                Tailwind
+                TeknoMart
               </h3>
               <MdArrowOutward className="text-orange-500" />
-            </Link>
+            </a>
           </div>
 
           {/* 4. Mobile See All Button */}
