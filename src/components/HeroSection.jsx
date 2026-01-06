@@ -29,11 +29,16 @@ const HeroSection = () => {
             Rayhan
           </span>
         </h1>
-        <p className="text-sm md:text-lg text-gray-400 text-center max-w-xl leading-relaxed">
-          Aspiring Full-Stack Developer dedicated to engineering
-          high-performance, scalable web applications. Currently mastering the
-          MERN stack and Next.js to bridge the gap between complex backend logic
-          and seamless user experiences.
+        <p className="text-white/70 max-w-lg leading-relaxed text-lg">
+          Building the next generation of the web with
+          <span className="text-white font-semibold">
+            {' '}
+            React, Node.js, and Next.js
+          </span>
+          . I focus on performance and clean code to transform complex ideas
+          into
+          <span className="text-orange-500"> production-ready</span> digital
+          solutions.
         </p>
       </div>
 
