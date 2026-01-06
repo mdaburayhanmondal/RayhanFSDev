@@ -26,7 +26,7 @@ const Contact = () => {
     {
       icon: <FaGithub />,
       href: 'https://github.com/mdaburayhanmondal',
-      color: 'hover:text-gray-900 dark:text-white',
+      color: 'hover:text-white/75 dark:text-white',
     },
     {
       icon: <FaFacebookF />,
