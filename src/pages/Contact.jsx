@@ -90,8 +90,8 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center gap-y-4 p-2 border rounded-xl w-fit shadow shadow-orange-300">
-            <span className="text-xs uppercase tracking-widest text-gray-900 dark:text-white/30 font-bold">
+          <div className="flex flex-col justify-center gap-y-4 p-2 border rounded-xl w-fit transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_12px_rgba(255,165,0,0.8)]">
+            <span className="text-xs uppercase tracking-widest text-gray-900 dark:text-white/30 font-bold select-none">
               Follow my journey
             </span>
             <div className="flex gap-x-5">
