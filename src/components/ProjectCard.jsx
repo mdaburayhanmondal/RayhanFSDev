@@ -1,7 +1,7 @@
 import { MdArrowOutward } from 'react-icons/md';
 import { memo } from 'react';
 
-const SkillCard = memo(
+const ProjectCard = memo(
   ({ projectTitle, imageSrc, imageAlt, firstPill, secondPill, liveLink }) => {
     return (
       <div className="w-full group transition-all duration-300">
@@ -40,4 +40,4 @@ const SkillCard = memo(
   }
 );
 
-export default SkillCard;
+export default ProjectCard;

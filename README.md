@@ -21,12 +21,4 @@ https://rayhanfsdev.netlify.app/
 - **Dynamic Projects:** Interactive project cards with live demo links.
 - **Functional Contact:** Direct email integration without a custom backend.
 
-## 📂 Project Structure
-
-- `/src/components`: Reusable UI elements (SkillCards, Navbar, etc.)
-- `/src/pages`: Individual page layouts (Home, Projects, Contact)
-- `/public`: Static assets including CV and project images
-
----
-
 © 2026 Md. Abu Rayhan Mondal

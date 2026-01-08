@@ -1,7 +1,15 @@
-import SkillCard from '../components/SkillCard';
+import ProjectCard from '../components/ProjectCard';
 
 const Projects = () => {
   const projectCards = [
+    {
+      id: 8,
+      projectTitle: 'Panto Furniture',
+      imageSrc: 'Panto-Furniture.png',
+      liveLink: 'https://panto-modern-furnitures.netlify.app/',
+      firstPill: 'React',
+      secondPill: 'Tailwind',
+    },
     {
       id: 7,
       projectTitle: 'CryptoDash',
@@ -62,7 +70,7 @@ const Projects = () => {
       {/* Project Cards */}
       <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-4 md:gap-6 md:grid-cols-3 items-center justify-center">
         {projectCards.map((card) => (
-          <SkillCard
+          <ProjectCard
             key={card.id}
             projectTitle={card.projectTitle}
             imageSrc={card.imageSrc}
