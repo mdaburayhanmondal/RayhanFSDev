@@ -20,7 +20,7 @@ const Navbar = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [menuOpen]);
 
-  // ✨ Updated styles for Light (default) & Dark (override)
+  // Navlink style
   const getLinkStyle = ({ isActive }) =>
     isActive
       ? 'text-white bg-gray-900 hover px-5 py-2 rounded-full font-medium shadow-sm dark:text-[#161513] dark:bg-white dark:shadow-[0_0_15px_rgba(255,255,255,0.3)]'
