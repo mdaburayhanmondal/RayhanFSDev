@@ -3,6 +3,14 @@ import ProjectCard from '../components/ProjectCard';
 const Projects = () => {
   const projectCards = [
     {
+      id: 9,
+      projectTitle: 'The Knowledge Hub',
+      imageSrc: 'the-knowledge-hub.png',
+      liveLink: 'https://theknowledgehub.netlify.app/',
+      firstPill: 'React',
+      secondPill: 'MongoDB',
+    },
+    {
       id: 8,
       projectTitle: 'Panto Furniture',
       imageSrc: 'Panto-Furniture.png',
