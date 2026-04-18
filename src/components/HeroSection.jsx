@@ -62,8 +62,8 @@ const HeroSection = () => {
         </Link>
 
         <a
-          href="/Md_Abu_Rayhan_Mondal_CV.pdf"
-          download="Md_Abu_Rayhan_Mondal_CV.pdf"
+          href="/Abu-Rayhan-FSD-CV.pdf"
+          download="Abu-Rayhan-FSD-CV.pdf"
           className="
       text-center px-8 py-3 rounded-full font-semibold transition-all duration-300 active:scale-95 border bg-transparent text-[#161513] border-[#161513]/30
       hover:bg-[#161513]/5 hover:border-[#161513] dark:text-white dark:border-white/20
