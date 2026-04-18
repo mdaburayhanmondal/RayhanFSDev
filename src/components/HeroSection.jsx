@@ -33,7 +33,7 @@ const HeroSection = () => {
           Building the next generation of the web with
           <span className="text-gray-900 dark:text-white font-semibold">
             {' '}
-            React, Node.js, and Next.js
+            React, Express.js, and Next.js
           </span>
           . I focus on performance and clean code to transform complex ideas
           into
