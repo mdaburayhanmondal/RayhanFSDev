@@ -1,11 +1,13 @@
 import HeroSection from '../components/HeroSection';
-import { FaHtml5 } from 'react-icons/fa';
+import { FaHtml5, FaNodeJs } from 'react-icons/fa';
 import { FaCss3Alt } from 'react-icons/fa6';
-import { RiJavascriptFill } from 'react-icons/ri';
+import { RiJavascriptFill, RiNextjsFill } from 'react-icons/ri';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { FaReact } from 'react-icons/fa';
 import { MdArrowOutward } from 'react-icons/md';
 import { Link } from 'react-router';
+import { SiExpress, SiMongoose, SiTypescript } from 'react-icons/si';
+import { DiMongodb } from 'react-icons/di';
 
 const Home = () => {
   const iconClasses =
@@ -29,7 +31,7 @@ const Home = () => {
               <h3 className="text-orange-400 font-mono text-sm uppercase">
                 Development
               </h3>
-              <div className="flex flex-wrap justify-center md:justify-start gap-x-2 sm:gap-x-6 text-gray-900 dark:text-white/80">
+              <div className="flex flex-wrap justify-center md:justify-start gap-x-2 gap-y-4 sm:gap-x-6 text-gray-900 dark:text-white/80">
                 <FaHtml5 size={40} className={iconClasses} title="HTML5" />
                 <FaCss3Alt size={40} className={iconClasses} title="CSS3" />
                 <RiJavascriptFill
@@ -43,6 +45,28 @@ const Home = () => {
                   title="Tailwind"
                 />
                 <FaReact size={40} className={iconClasses} title="React" />
+                <FaNodeJs size={40} className={iconClasses} title="Nodejs" />
+                <SiExpress
+                  size={40}
+                  className={iconClasses}
+                  title="Expressjs"
+                />
+                <DiMongodb size={40} className={iconClasses} title="MongoDB" />
+                <SiMongoose
+                  size={40}
+                  className={iconClasses}
+                  title="Mongoose"
+                />
+                <SiTypescript
+                  size={40}
+                  className={iconClasses}
+                  title="TypeScript"
+                />
+                <RiNextjsFill
+                  size={40}
+                  className={iconClasses}
+                  title="Next.js"
+                />
               </div>
             </div>
 
